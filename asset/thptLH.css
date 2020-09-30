@@ -1,0 +1,758 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-seri;
+}
+a{
+    text-decoration: none;
+}
+.white-place{
+    width: 100%;
+    height: 52px;
+}
+/* Start nav-bar */
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color:white;
+    position: fixed;
+    z-index: 333;
+    
+}
+.nav-bar{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+ul{
+    display: flex;
+    list-style: none;
+}
+.logo{
+    justify-content: center;
+    font-size: 2.4rem;
+    font-weight: 200;
+}
+.logo a{
+    padding: 30px 0;
+    align-items: center;
+    color: #666;
+    white-space: nowrap;
+}
+a{
+    transition: 0.5s;
+}
+ul.menu-list li.item{
+    padding: 30px 15px;
+    font-size: 1.3rem;
+}
+ul.menu-list .item a{
+    color: #666;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+ul.menu-list li:last-child{
+    font-size: 1.5rem;
+    color: #3a52bf;
+}
+.menu-list li:hover a{
+    transition: 0.5s;
+    color: #337ab7;
+}
+.menu-list #prolem{
+    margin: auto 10px;
+}
+
+
+.menu-list .item-4{
+    position: relative;
+}
+.drop-menu{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    display: none;
+}
+.drop-menu li{
+    padding: 10px 25px;
+}
+.item-4 .drop-menu .drop-item a{
+    text-transform: none;
+    color:#8c979e;
+    font-weight: 300;
+}
+.menu-list .item-4 ul{
+    background-color: white;
+    border: grey solid 1px;
+}
+.menu-list .item-4:hover .drop-menu{
+    display: block;
+}
+.item-4 .drop-menu .drop-item:hover{
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+.item-4 .drop-menu .drop-item:hover a{
+    transition: 0.5s;
+    color: #337ab7;
+} 
+.menu-list .item-4:hover .drop-menu{
+    margin-top: 20px;
+    display: block;
+}
+.menu-list .item-4 .drop-menu .drop-item{
+    font-size: 1.4rem;
+}
+
+
+#prolem{
+    display: flex;
+    position: relative;
+    flex-direction: row-reverse;
+    padding: 30px ;
+    padding-left: 30px;
+}
+#prolem .search-box{
+    margin-top: 35px;
+    margin-left: 20px;
+    position: absolute;
+    width: 285px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 10px rgb(140, 151, 158);
+    display: none;
+}
+#prolem .search-box .text{
+    width: 180px;
+    background: #f5f5f5;
+    height: 50px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    border: none;
+    padding:0 20px;
+    box-sizing: border-box;
+}
+#prolem .search-box .button{
+   width: 80px;
+   height: 50px;
+   background-color:#745cf9;
+   border: none;
+   font-size: 1.1rem;
+   text-transform: uppercase;
+}
+#prolem .search-box .button a{
+    color: #fff;
+}
+#prolem .search-box .text:hover{
+    border: 1px solid #745cf9;
+    padding: 0 19px;
+}
+#prolem:hover .search-box{
+    display: flex;
+}
+
+@media (max-width:575px){
+    .nav-bar{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* End nav-bar */
+
+/* Start-page begin */
+.container{
+    width: 100%;
+    height: auto;
+}
+.container .start-page .bg-img{
+    width: 100%;
+    height: 790px;
+    background-image: url(../pic/546ff023fb9504cb5d84.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.container .start-page .bg-img .content h1{
+    width: auto;
+    height: auto;
+    color: #fff;
+    font-size: 60px;
+    line-height: 64px;
+    font-weight: 400;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 300;
+}
+.container .start-page .bg-img .content p{
+    font-size: 3.4rem;
+    color: #fff;
+    font-weight: 200;
+    width:auto;
+    height: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+}
+.container .start-page .bg-img .content .double-button button{
+    width: 200px;
+    height: 54px;
+    background-color: #745cf9;
+    border: #745cf9;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+    
+}
+.container .start-page .bg-img .content .double-button button a{
+    color: white;
+}
+.container .start-page .bg-img .content .double-button .diferent{
+    margin-left: 8px;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.container .start-page .bg-img .content .double-button .only:hover{
+    transition: 0.5s;
+    background-color:rgba(106, 83, 235,0.5)
+}
+.container .start-page .bg-img .content .double-button .diferent:hover{
+    background-color: white;
+    transition: 0.5s;
+}
+.container .start-page .bg-img .content .double-button .diferent:hover a{
+    color: black;
+    transition: 0.5s;
+}
+/* Start-page end */
+
+/* Star-Introduce */
+
+.contentintro{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+} 
+.contentintro .in{
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-seri;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    color: rgb(140, 151, 158);
+    font-weight: lighter;
+}
+.contentintro .con{
+    font-family: raleway,helvetica neue,Helvetica,Arial,sans-seri;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: rgb(140, 151, 158);
+    font-weight: lighter;
+}
+
+/* End-Introduce */
+
+/* Member */
+
+.content-one .content .mem h1{
+    margin-bottom: 30px;
+}
+
+/* End-Member */
+
+/* Sản phẩm */
+
+.sanphamne{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    background-color: gray;
+}
+.sanphamne h1{
+    color:white;
+    font-size: 5.4rem;
+    font-weight: lighter;
+}
+
+/* Kết thúc Sản phẩm */
+
+
+/* Start content-one */
+.content-one{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+.content-one .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.content-one .content .paragrap{
+    width: auto;
+    height: auto;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.content-one .content .paragrap h1{
+    font-size: 3rem;
+    font-weight: 300;
+    width: auto;
+    height: auto;
+}
+.content-one .content .paragrap p{
+    width: 360px;
+    height: auto;
+    font-size: 2rem;
+    font-weight: 300;
+    color: rgb(140, 151, 158);
+    margin-top: 2px;
+    margin-bottom: 20px;
+    line-height: 24px;
+}
+.content-one .content .paragrap button{ 
+    width: 200px;
+    height: 54px;
+    background-color: #745cf9;
+    border: #745cf9;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.content-one .content .paragrap button a{
+    color: white;
+}
+.content-one .content .paragrap button:hover{
+    transition: 0.5s;
+    background-color:rgba(106, 83, 235,1);
+}
+
+@media (max-width:575px){
+    .content-one .content{
+        flex-direction: column;
+    }
+}
+/* End content-one */
+
+/* Start content-three */
+.content-three{
+    width: 100%;
+}
+.content-three .bg-img{
+    width: 100%;
+    height: 440px;
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1452723312111-3a7d0db0e024.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-three .bg-img .content h1{
+    font-size: 6rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 24px;
+}
+.content-three .bg-img .content p{
+    width: 800px;
+    height: 48px;
+    font-size: 1.4rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.content-three .bg-img .content button{
+    width: 200px;
+    height: 54px;
+    background-color: #745cf9;
+    border: #745cf9;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.content-three .bg-img .content button a{
+    color: white;
+}
+.content-three .bg-img .content button:hover{
+    transition: 0.5s;
+    background-color:rgba(106, 83, 235,1)
+}
+/* End content-three */
+
+/* Start content-four */
+.content-four{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content-four .content{
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-four .content .paragrap{
+    width: 945px;
+    margin-top: 90px;
+    margin-bottom: 24px;
+    text-align: center;
+    align-items: center; 
+}
+.content-four .content .paragrap h3{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+.content-four .content .paragrap p{
+    margin: 0 auto;
+    width: 830px;
+    color: rgb(140, 151, 158);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 24px;
+    line-height: 24px;
+}
+.content-four .content .paragrap button{
+    width: 200px;
+    height: 54px;
+    background-color: #745cf9;
+    border: #745cf9;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.content-four .content .paragrap button a{
+    color: white;
+}
+.content-four .content .paragrap button:hover{
+    transition: 0.5s;
+    background-color:rgba(106, 83, 235,1)
+}
+.content-four .content .img{
+    display: flex;
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1440557653082-e8e186733eeb-1.jpg);
+    width: 100%;
+    height: 830px;
+    background-size: cover;
+    background-position: center;
+}
+/* End content-four */
+
+/* Start content-five */
+.content-five{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(14, 16, 21);
+}
+.content-five .content .paragrap h1{
+    font-size: 3rem;
+    font-weight: 300;
+    color: white;
+    margin-top: 90px;
+    margin-bottom: 30px;
+}
+.content-five .content .paragrap p{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+.content-five .picture-pj{
+    width: 100%;
+    height: 765px;
+}
+.content-five .picture-pj .row-3{
+    display: flex;
+    width: 100%;
+    height: calc(100%/3);
+}
+.content-five .picture-pj .row-3 .col-4{
+    width: calc(100% / 4);
+    transition: 0.5s;
+}
+.content-five .picture-pj .row-3 .col-4 a{
+    color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+    transition: 0.5s;
+}
+.content-five .picture-pj .row-3 .pic-1{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1443890484047-5eaa67d1d630-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-2{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1422568374078-27d3842ba676-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-3{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1447834353189-91c48abf20e1-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-4{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1447877085163-3cce903855cd-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-5{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1447958374760-1ce70cf11ee3-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-6{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1430329429612-babb42f88673-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-7{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1449057528837-7ca097b3520c-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-8{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1449168013943-3a15804bb41c-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-9{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1451186859696-371d9477be93-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-10{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/photo-1448518184296-a22facb4446f-1-1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-11{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .pic-12{
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-five .picture-pj .row-3 .col-4:hover a{
+    color: white;
+    transition: 0.5s;
+}
+.hiden-class{
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    transition: 0.5s;
+}
+.content-five .picture-pj .row-3 .col-4:hover .hiden-class{
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    justify-content: center;
+}
+/* End content-five */
+
+/* Start content-six */
+.content-six{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-six .bg-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-six .bg-img .content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content-six{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/12/photo-1451417379553-15d8e8f49cde.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.content-six .bg-img .img-avata{
+    background-image: url(https://colorlib.com/shapely/wp-content/uploads/sites/12/2016/03/mike-muller-150x150.jpg);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+.content-six .bg-img .content h1{
+    font-size: 3rem;
+    color: white;
+    font-weight: 300;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.content-six .bg-img .content p{
+    font-size: 1.4rem;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 24px;
+    line-height: 24px;
+    width: 730px;
+    height: 72px;
+}
+.content-six .bg-img .content .name-of-him{
+    color: white;
+    margin-top: 14px;
+}
+/* End content-six */
+
+/* Start content-seven */
+.content-seven{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.content-seven .content .img-icon{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 90px;
+}
+.content-seven .content .img-icon div a img{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+.content-seven .content .img-icon div{
+    padding: 0 40px;
+}
+.content-seven .content .img-icon div:hover a img{
+    opacity: 1;
+    transition: 0.5s;
+}
+.content-seven .content h1{
+    font-size: 3rem;
+    font-weight: 300;
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+/* End content-seven */
+
+/* Start content-eight */
+.content-eight{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f5f5f5;
+}
+.content-eight .content{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 90px 0;
+}
+.content-eight .content h1{
+    font-size: 3rem;
+    font-weight: 300;
+}
+.content-eight .content button{
+    width: 256px;
+    height: 54px;
+    background-color: #745cf9;
+    border: #745cf9;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+.content-eight .content button a{
+    color: white;
+}
+.content-eight .content button:hover{
+    transition: 0.5s;
+    background-color:rgba(106, 83, 235,1)
+}
+/* End content-eight */
+.footer{
+    background-color: #0e1015;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+.footer .content{
+    background-color: #0e1015;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 90px 0;
+}
+.footer .content ul{
+    display: flex;
+}
+.footer .content ul li{
+    padding: 10px;
+    font-size: 1.6rem;
+    color: white;
+    transition: 0.5s;
+}
+.footer .content p{
+    color: #fff;   
+    font-size: 1.4rem;
+    opacity: 0.6;
+}
+.footer .content ul li:hover{
+    transition: 0.5s;
+    color: #654bf7;
+}
+/* End Footer */
